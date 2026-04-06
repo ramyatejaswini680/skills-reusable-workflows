@@ -1,11 +1,11 @@
 name: Step 0 # Start Exercise
 
 on:
-  push:
-    branches:
-      - main
-
-permissions:
+    workflow_call:
+            inputs:
+                        node:
+                            required:  true
+                            type:  string
   contents: write
   actions: write
   issues: write
